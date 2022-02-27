@@ -21,7 +21,6 @@ function Content({ tasks, onTodoClick }: MyProps) {
           checked={done}
           id={`task-${id}`}
           onChange={() => {
-            console.log(id);
             onTodoClick({ id, label, done });
           }}
         />
